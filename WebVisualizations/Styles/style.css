@@ -1,0 +1,16 @@
+ /* Footer */
+ footer{
+    background-color: var(--secondary); 
+    border-top-style: solid; 
+    border-top-width: 5px; 
+    border-top-color: var(--primary);
+    min-height: 55px; 
+    font-size: 15px; 
+    text-align: center; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 15px; 
+    }
+
