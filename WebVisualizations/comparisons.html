@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>COVID-19 Anaylsis</title>
+  <title>Comparisons</title>
   <link rel="stylesheet" type="text/css" href="Styles/darkly_bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="Styles/style.css">
 </head>
@@ -11,11 +11,16 @@
   <!-- Navigation Section -->
   <div class="navigation">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="index.html">COVID-19 Anaylsis</a>
+      <a class="navbar-brand" href="https://henrywrandall.com/">Henry W. Randall</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">COVID-19 Anaylsis <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"aria-haspopup="true" aria-expanded="false">Plots</a>
@@ -50,7 +55,47 @@
   </div>
   
   <!-- Content Section -->
+  <hr>
 
+  <div class="jumbotron center">
+    <div class="row">
+      <div class="container">
+        <h3 class="title">Comparison: Spread of COVID-19 vs X</h3>
+        <hr>
+        <p>Click any plot to get an in-depth analysis.</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6" style="padding: 30px;">
+              <div class="title">vs. Hospital Quality</div>
+              <a href="hosplot.html">
+                <img class="panel" src="Resources\assets\plots\Average Hospital_vs_confirm_50.png" alt="Hospital Quality">
+              </a>
+            </div>
+            <div class="col-lg-6" style="padding: 30px;">
+              <div class="title">vs. Median Household Income</div>
+              <a href="mhiplot.html">
+                <img class="panel" src="Resources\assets\plots\Median Household Income_vs_confirm_50.png" alt="Median Household Income">
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6" style="padding: 30px;">
+              <div class="title">vs. Population Density</div>
+              <a href="popdenplot.html">
+                <img class="panel" src="Resources\assets\plots\Population Density_vs_confirm_50.png" alt="Population Density">
+              </a>
+            </div>
+            <div class="col-lg-6" style="padding: 30px;">
+              <div class="title">vs. Poverty Rate</div>
+              <a href="povrateplot.html">
+                <img class="panel" src="Resources\assets\plots\Poverty Rate_vs_confirm_50.png" alt="Poverty Rate">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   
   <!-- Footer Section -->

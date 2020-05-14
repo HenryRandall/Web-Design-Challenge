@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>COVID-19 Anaylsis</title>
+  <title>Deaths Heatmap</title>
   <link rel="stylesheet" type="text/css" href="Styles/darkly_bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="Styles/style.css">
 </head>
@@ -59,61 +59,11 @@
   <hr>
 
   <div class="jumbotron center">
-    <div class="row">
-      <div class="col-lg-7 col-md-12">
-        <!-- Left box  -->
-        <div class="box">
-          <h3 class="title">Summary: Latitude vs. X</h3>
-          <hr>
-          <img src="Resources\assets\plots\Population Density_vs_confirm_50.png" class="vizualization rounded float-left" alt="Population Density">
-          
-          <p style="font-size:120%;">The purpose of this project was to analyze how societal factors effect the spread of COVID-19 in the United States of 
-          America. To accomplish this analysis, I pulled data from the Johns Hopkins Covid-19 github repository and matched that 
-          data to demographic data from the US Census API on a county by county basis.</p> 
-          
-          <p style="font-size:120%;">After Assembling the dataset, I used Matplotlib to create scatter plots of the number of confirmed cases on the 50th day 
-          since the first case appeared in a county vs. poverty rate, population density, median household income, and hospital quality. 
-          I then created heatmaps of the COVID-19 confirmed cases and deaths to better visualize the problem. This site provides the source data and 
-          visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
-          
-        </div>
-      </div>
-      
-      <div class="col-lg-5 col-md-12">
-        <h3 class="title">Visualizations</h3>
-        <hr>
-        <div class="container">
-          <div class="row" style="padding-bottom: 30px;">
-            <div class="col-6">
-              <a href="hosplot.html">
-                <img class="panel" src="Resources\assets\plots\Average Hospital_vs_confirm_50.png" alt="Hospital Quality">
-              </a>
-            </div>
-            <div class="col-6">
-              <a href="mhiplot.html">
-                <img class="panel" src="Resources\assets\plots\Median Household Income_vs_confirm_50.png" alt="Median Household Income">
-              </a>
-            </div>
-          </div>
-          <div class="row" style="padding-bottom: 30px;">
-            <div class="col-6">
-              <a href="popdenplot.html">
-                <img class="panel" src="Resources\assets\plots\Population Density_vs_confirm_50.png" alt="Population Density">
-              </a>
-            </div>
-            <div class="col-6">
-              <a href="povrateplot.html">
-                <img class="panel" src="Resources\assets\plots\Poverty Rate_vs_confirm_50.png" alt="Poverty Rate">
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <h1 class="display-3">Current Deaths</h1>
+    <iframe src="Resources/assets/heatmaps/death_current.html"></iframe>
   </div>
 
-
-
+  
   
   <!-- Footer Section -->
   <footer>
