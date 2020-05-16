@@ -28,11 +28,12 @@ img{
    width:100%;
    height:100%;
  }
+
 .active, .panel:hover{
    border-color: var(--primary);
    border-style: solid;
-   
  }
+
 .vizualization{
    width:50%;
    height:50%;
@@ -47,3 +48,39 @@ img{
    margin-right: auto;
    vertical-align: middle;
  }
+
+thead {
+   background-color: var(--primary); 
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+	background-color: var(--secondary);
+}
+
+
+/* Media Queries */
+@media(max-width: 992px){
+   body {background-color: var(--primary)}
+
+   .navbar-expand-lg{background-color: var(--dark) !important;}
+
+   .active{border: 0px;}
+
+   .navbar div{
+      background-color: var(--secondary)
+   }
+   
+   .nav-item{
+      margin-left: 25px;
+   }
+
+   .navbar-brand{
+      padding: 10px !important; 
+   }
+
+   button{
+      margin-right: 30px; 
+   }
+
+   }
